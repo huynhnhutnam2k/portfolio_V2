@@ -5,6 +5,7 @@ import Welcome from "../components/Welcome";
 import Navbar from "../components/Navbar";
 import AnimatedBackground from "../components/AnimatedBackground";
 import Home from "../components/Home";
+import About from "../components/About";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
@@ -25,6 +26,7 @@ function Index() {
           <Navbar />
           <AnimatedBackground />
           <Home />
+          <About />
         </>
       ) : null}
     </>
