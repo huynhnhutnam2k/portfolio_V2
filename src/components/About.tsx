@@ -105,7 +105,7 @@ const About = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Huynh Nhut Nam
               </span>
             </h2>
 
@@ -114,10 +114,8 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              seorang siswa Teknik Jaringan Komputer dan Telekomunikasi yang
-              tertarik dalam pengembangan Front-End. Saya berfokus pada
-              menciptakan pengalaman digital yang menarik dan selalu berusaha
-              memberikan solusi terbaik dalam setiap proyek.
+              I am a quality-oriented software engineer who always wants to do right things and do things right. Hence, I can
+              collaborate very well with teammates meanwhile working independently is one of my strong points
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">

@@ -6,13 +6,14 @@ import Navbar from "../components/Navbar";
 import AnimatedBackground from "../components/AnimatedBackground";
 import Home from "../components/Home";
 import About from "../components/About";
+import Portfolio from "../components/Portfolio";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
 });
 
 function Index() {
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(false);
   return (
     <>
       <AnimatePresence mode="wait">
@@ -27,6 +28,7 @@ function Index() {
           <AnimatedBackground />
           <Home />
           <About />
+          <Portfolio />
         </>
       ) : null}
     </>
