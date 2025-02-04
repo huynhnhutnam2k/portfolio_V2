@@ -77,12 +77,11 @@ const Portfolio = () => {
     try {
       const projectCollection = collection(db, "projects");
       const certificateCollection = collection(db, "certificates");
-
       const [projectSnapshot, certificateSnapshot] = await Promise.all([
         getDocs(projectCollection),
         getDocs(certificateCollection),
       ]);
-
+      
       const projectData = projectSnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),

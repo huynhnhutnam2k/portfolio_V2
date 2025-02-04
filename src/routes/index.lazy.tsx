@@ -14,7 +14,7 @@ export const Route = createLazyFileRoute("/")({
 });
 
 function Index() {
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(false);
   return (
     <>
       <AnimatePresence mode="wait">
