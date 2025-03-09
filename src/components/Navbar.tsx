@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

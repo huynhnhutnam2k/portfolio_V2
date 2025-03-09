@@ -4,7 +4,6 @@ import TextGradient from "./TextGradient";
 import {
   ExternalLink,
   Github,
-  Instagram,
   Linkedin,
   LucideProps,
   Mail,
@@ -19,9 +18,11 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["Information technology", "Knowledge in frontend and backend"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/EkiZR" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ekizr/" },
-  { icon: Instagram, link: "https://www.instagram.com/ekizr_/?hl=id" },
+  { icon: Github, link: "https://github.com/huynhnhutnam2k" },
+  {
+    icon: Linkedin,
+    link: "https://www.linkedin.com/in/huynh-nhut-nam-047a43266/",
+  },
 ];
 
 type TechStackProps = {
@@ -150,8 +151,8 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Menciptakan Website Yang Inovatif, Fungsional, dan
-                  User-Friendly untuk Solusi Digital.
+                  Create innovative, usable and user-friendly websites for
+                  digital solutions.
                 </p>
 
                 <div
