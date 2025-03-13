@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { memo, useEffect, useMemo } from "react";
 import Aos from "aos";
 import {
@@ -42,7 +43,7 @@ const About = () => {
 
     initAOS();
 
-    let resizeTimer: number | undefined;
+    let resizeTimer: any;
     const handleResize = () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(initAOS, 250);
@@ -114,8 +115,10 @@ const About = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              I am a quality-oriented software engineer who always wants to do right things and do things right. Hence, I can
-              collaborate very well with teammates meanwhile working independently is one of my strong points
+              I am a quality-oriented software engineer who always wants to do
+              right things and do things right. Hence, I can collaborate very
+              well with teammates meanwhile working independently is one of my
+              strong points
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">

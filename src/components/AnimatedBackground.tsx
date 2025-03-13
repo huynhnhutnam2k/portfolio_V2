@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const AnimatedBackground = () => {
   const blobRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -12,7 +12,7 @@ const AnimatedBackground = () => {
 
   useEffect(() => {
     let requestId: number;
-    
+
     const handleScroll = () => {
       const newScroll = window.pageYOffset;
       blobRefs.current.forEach((blob, index) => {
