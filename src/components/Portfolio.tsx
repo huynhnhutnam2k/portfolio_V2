@@ -2,7 +2,6 @@
 import Aos from "aos";
 import { collection, getDocs } from "firebase/firestore";
 import { Award, Boxes, Code } from "lucide-react";
-import SwipeableViews from "react-swipeable-views";
 import { AppBar, Box, Tab, Tabs, Typography } from "@mui/material";
 import React, {
   memo,
@@ -81,7 +80,7 @@ const Portfolio = () => {
         getDocs(projectCollection),
         getDocs(certificateCollection),
       ]);
-      
+
       const projectData = projectSnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
@@ -279,7 +278,6 @@ const Nav: React.FC<NavType> = memo(({ value, handleChange }) => {
 const ContentPanel: React.FC<ContentPanelType> = memo(
   ({
     value,
-    setValue,
     theme,
     displayedProjects,
     projects,
@@ -291,11 +289,7 @@ const ContentPanel: React.FC<ContentPanelType> = memo(
     certificates,
   }) => {
     return (
-      <SwipeableViews
-        index={value}
-        onChangeIndex={setValue}
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-      >
+      <div>
         <TabPanel value={value} index={0} dir={theme.direction}>
           <div className="container mx-auto flex justify-center items-center overflow-hidden flex-col">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
@@ -392,7 +386,7 @@ const ContentPanel: React.FC<ContentPanelType> = memo(
             </div>
           </div>
         </TabPanel>
-      </SwipeableViews>
+      </div>
     );
   }
 );

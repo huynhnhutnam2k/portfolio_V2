@@ -157,7 +157,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="container px-[1%] lg:px-[10%]">
+    <div className="px-[1%] lg:px-[10%]">
       <div className="text-center lg:mt-[5%] mb-2 sm:px-0 px-[5%]">
         <h2
           data-aos="fade-down"
